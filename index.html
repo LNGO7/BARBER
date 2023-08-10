@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Barber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="favikona.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <img src="/DB_Color.png" style="height:60px; width: 60px;">
+  </div>
+  <div class=body> 
+    <ul class="snip1143">
+      <li class="current"><a href="#" data-hover="Úvod">Úvod</a></li>
+      <li><a href="#galerie" data-hover="Galerie">Galerie</a></li>
+      <li><a href="#sluzby" data-hover="Služby">Služby</a></li>
+      <li><a href="#aboutme" data-hover="O nás">O nás</a></li>
+      <li><a href="#kontakt" data-hover="Kontakt">Kontakt</a></li>
+    </ul>
+    </div>
+  <div class="w3-display-middle">
+    <h1 id="Dangerous" class="w3-jumbo w3-animate-top">Dangerous Barber</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:60%">
+    <h5 style="text-align: center; padding-top: 10px;">Karoliny Světlé 147, Kolín I, 280 02 Kolín</h5>
+  </div>
+</div>
+
+<!-- Galerie -->
+<div class="w3-container" id="galerie" style="background-color: #141412; padding: 40px;"> 
+  <div class="gallery-wrapper">
+    <div class="gallery-row">
+      <div class="gallery-item-small">
+        <img src="barber1.jpeg" alt="Image 9">
+      </div>
+      <div class="gallery-item-small">
+        <img src="barber3.jpeg" alt="Image 11">
+      </div>
+      <div class="gallery-item-small">
+        <img src="barber4.jpeg" alt="Image 12">
+      </div>
+      <div class="gallery-item-small">
+        <img src="barber2.jpeg" alt="Image 10">
+      </div>
+    <div class="gallery-row">
+      <div class="gallery-item-small">
+        <img src="barber9.jpeg" alt="Image 9">
+      </div>
+      <div class="gallery-item-small">
+        <img src="barber6.jpeg" alt="Image 14">
+      </div>
+      <div class="gallery-item-small">
+        <img src="barber7.jpeg" alt="Image 14">
+      </div>
+      <div class="gallery-item-small">
+        <img src="barber10.jpeg" alt="Image 14">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Rezervacni system -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://app.cal.com"});
+  
+  Cal("floatingButton", {"calLink":"patrik-barber","buttonText":"Rezervace"});
+  Cal("ui", {"styles":{"branding":{"brandColor":"#00000"}},"hideEventTypeDetails":false});
+</script>
+
+<!-- Služby -->
+<div class="w3-container" id="sluzby" style="background-color:white; padding: 40px; border: 5px solid #d5b400; border-radius: 4px; margin: 30px"> 
+      <h2 style="text-align:center">Služby</h2>
+      <hr class="w3-border-grey" style="margin:auto;width:40%;padding-top: 30px;">
+      <h4>PÁNSKÝ STŘIH</h4>
+      <h6>60 minut</h6>
+      <p>Konzultace, střih, úprava obočí a kontur břitvou, mytí, opálení uší, vysušení, kolínská, styling</p>
+      <h6><b>460,-</b></h6>
+      &nbsp;
+      <h4>PÁNSKÝ DLOUHÝ STŘIH</h4>
+      <h6>60 minut</h6>
+      <p>Konzultace, střih nůžkámi dle potřeby strojkem, úprava obočí a kontur břitvou, mytí, opálení uší, vysušení, kolínská, styling</p>
+      <h6><b>660,-</b></h6>
+      &nbsp;
+      <h4>DĚTSKÝ STŘÍH DO 3 LET</h4>
+      <h6>60 minut</h6>
+      <p>Konzultace, střih, úprava kontur strojkem, mytí, opálení uší dle uvážení, vysušení, kolínská, styling</p>
+      <h6><b>400,-</b></h6>
+      &nbsp;
+      <h4>ÚPRAVA VOUSŮ (HOT TOWEL)</h4>
+      <h6>60 minut</h6>
+      <p>Konzultace, úprava délky, úprava tvaru, horký ručník (hot towel), ošetření, úprava břitvou, mytí, opálení uší, kolínská, vysušení, styling</p>
+      <h6><b>460,-</b></h6>
+      &nbsp;
+      <h4>ÚPRAVA DLOUHÝCH VOUSŮ (HOT TOWEL)</h4>
+      <h6>60 minut</h6>
+      <p>Konzultace, úprava délky, úprava tvaru, horký ručník (hot towel), ošetření, úprava břitvou, mytí, opálení uší, kolínská, vysušení, styling</p>
+      <h6><b>660,-</b></h6>
+      &nbsp;
+      <h4>KOMPLETKA (STŘIH + VOUSY)</h4>
+      <h6>60 minut</h6>
+      <p>Konzultace, střih, úprava vousů, ošetření, horký ručník (hot towel), ošetření, úprava břitvou brada, úprava břitvou obočí a kontur, mytí, opálení uší, kolínská, vysušení, styling</p>
+      <h6><b>760,-</b></h6>
+      &nbsp;
+      <h4>KOMPLETKA EXCLUSIVE</h4>
+      <h6>120 minut</h6>
+      <p>Konzultace, střih, úprava vousů, ošetření, horký ručník (hot towel) + parní napaření, úprava kontur a obočí břitvou, úprava brady břitvou, pealing maska, černa slupovací maska, opálení uší,
+        depilace nosu/uší, parafinový zábal, premium whisky/rum</p>
+      <h6><b>2500,-</b></h6>
+      &nbsp;
+      <h4>STYLING</h4>
+      <h6>30 minut</h6>
+      <p>Úprava, mytí, opálení chloupků, kontrola, vysušení, kolínská, styling</p>
+      <h6><b>310,-</b></h6>
+      &nbsp;
+      <h4>ODBARVOVÁNÍ VOUSŮ/VLASŮ</h4>
+      <h6><b>1700,-</b></h6>
+      &nbsp;
+      <h4>DOBARVOVÁNÍ VOUSŮ/VLASŮ</h4>
+      <h6><b>300,-</b></h6>
+      &nbsp;
+      <h4>DEPILACE NOSU A UŠÍ</h4>
+      <h6><b>100,-</b></h6>
+      &nbsp;
+      <h5 style="color:red;">DOPLŇKY KE SLUŽBÁM HLÁSIT PŘED ZAHÁJENÍM / PŘI TELEFONÁTŮ / PŘI OBJEDNÁVCE DO POZNÁMEK.</h5>
+      &nbsp;
+      <h5 style="color:red;">NYNÝ NABÍZÍME TAKÉ VOUCHERY!</h5>
+    </div>
+  </div>
+</div>
+  <div class="about-me-container" id="aboutme">
+    <img src="pata2.jpg" id="patrik-foto" alt="Picture of me as a barber" class="about-me-picture">
+    <div class="about-me-story">
+      <h2 id="omne">Něco málo o mně</h2>
+      <hr class="w3-border-grey" style="margin:auto;width:20%;padding-top: 30px; padding-right: 220px;">
+      <p>
+        Ahoj, jsem Patrik a věnuju se pánskému střihu už 4 rokem. Stříhání bylo pro mě nejdříve hobby, které jsem provozoval po práci. 
+        Jednoho dne jsem si ale řekl, že chci jít za svým snem a začal jsem se mu věnovat naplno! Po cenných zkušenostech, které jsem nabral
+        v Barbershopu v Kutné Hoře jsem se rozhodl vydat se vlastní cestou...
+      </p>
+      <p>
+        Za roky stříhání jsem si vytvořil vlastní styl střihu,co ale zůstalo stejné je péče o zákazníky. Mým cílem je lidem dělat zážitek, 
+        zážitek a pocit, že se o ně někdo postará a oni tak můžou mít chvíli jen pro sebe. 
+      </p>
+    </div>
+  </div>
+ 
+</div>
+  <div class="w3-container" style="padding-top: 100px; background-color: #141412;"> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.972455234589!2d15.19874573193042!3d50.02757765159566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c15212587e621%3A0x18ddd699c1ebe39d!2zS2Fyb2xpbnkgU3bEm3Rsw6kgMTQ3LCBLb2zDrW4gSSwgMjgwIDAyIEtvbMOtbg!5e0!3m2!1scs!2scz!4v1679667839087!5m2!1scs!2scz" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="footer"> 
+    <footer>
+      <div class="footer-content" id="kontakt">
+        <h3>Otevírací doba</h3>
+        <hr class="w3-border-grey" style="margin:auto;width:40%;padding-top: 30px;">
+        <ul class="contact-info">
+          <li>Pondělí - Pátek: 9:00-17:00</li>
+          <li>Sobota: Po telefonické domluvě</li>
+        </ul>
+      </div>
+
+  <div class="footer"> 
+  <footer>
+    <div class="footer-content" id="kontakt">
+      <h3>Kontakt</h3>
+      <hr class="w3-border-grey" style="margin:auto;width:40%;padding-top: 30px;">
+      <ul class="contact-info">
+        <li><i class="fa fa-map-marker"></i>Karoliny Světlé 147, Kolín I, 280 02 Kolín</li>
+        <li><i class="fa fa-phone"></i>(+420) 608 858 564</li>
+        <li><i class="fa fa-envelope"></i> denzrbarber@gmail.com</li>
+      </ul>
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/profile.php?id=100095372100449"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/dangerous_barber_kolin/"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy <span id="year"></span> <a href="https://instagram.com/linhartl_?igshid=YmMyMTA2M2Y=">@lukaslinhart</a> </p>
+    </div>
+    <script>
+      const year = document.getElementById("year");
+      year.textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</div>
+</body>
+</html>
